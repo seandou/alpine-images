@@ -3,7 +3,7 @@
 set -x
 set -e
 
-docker run --name alpine-base-test \
+docker run --name=alpine-base-test \
     -it --rm \
     -v $(pwd):/share \
     alpine:3.4 \
