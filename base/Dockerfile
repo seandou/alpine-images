@@ -10,7 +10,7 @@ FROM alpine:3.4
 ADD repositories /etc/apk/repositories
 
 # Update repository and install useful packages  
-RUN apk update && \
-    apk add bash
+RUN apk update \
+    && apk add bash
 
 CMD ["/bin/bash"]
