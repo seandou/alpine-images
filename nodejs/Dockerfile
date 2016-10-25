@@ -1,6 +1,12 @@
 # docker build -t alpine-nodejs .
 
-FROM centos-base:latest
+FROM alpine-base:latest
 
-# RUN apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg
+# Build node
+COPY build-node.sh /build-node.sh
+RUN sh /build-node.sh && rm /build-node.sh
 
+# Set work directory
+WORKDIR /root
+
+CMD ["/bin/bash"]
