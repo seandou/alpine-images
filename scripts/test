@@ -3,8 +3,9 @@
 # set -x
 set -e
 
-docker run --name=alpine-base-test \
+docker run --name=alpine-test \
     -it --rm \
+    -p 10022:22 \
     -v $(pwd):/share \
-    alpine:3.4 \
-    /bin/sh
+    alpine-openssh \
+    /bin/bash
