@@ -10,5 +10,8 @@ cd /tmp/ && tar xzf node-v4.6.1.tar.gz
 # Building
 cd /tmp/node-v4.6.1/ && ./configure && make && make install
 
+# Clean up temp files
+rm -rf /tmp/node-v4.6.1.tar.gz /tmp/node-v4.6.1
+
 # Update npm and install cnpm
 npm install -g npm cnpm
