@@ -4,7 +4,7 @@
 apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg
 
 # Download and unpack node package
-wget -c https://nodejs.org/dist/v4.6.1/node-v4.6.1.tar.gz /tmp/node-v4.6.1.tar.gz
+wget -c https://nodejs.org/dist/v4.6.1/node-v4.6.1.tar.gz -O /tmp/node-v4.6.1.tar.gz
 cd /tmp/ && tar xzf node-v4.6.1.tar.gz
 
 # Building
