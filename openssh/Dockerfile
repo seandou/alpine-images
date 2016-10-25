@@ -3,8 +3,7 @@
 FROM alpine-base
 
 # Update repository and install ssh-server
-RUN apk update \
-    && apk add openssh \
+RUN apk add --no-cache openssh \
     && rm -f /var/cache/apk/*
 
 COPY sshd_config /etc/ssh/sshd_config

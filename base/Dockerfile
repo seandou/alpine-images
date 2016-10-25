@@ -14,7 +14,7 @@ RUN apk update \
     && apk add bash bash-completion \
     && apk add tzdata \
     && apk add openssl \
-    && apk add wget curl telnet tree vim git \
+    && apk add wget curl tree vim git \
     && apk add htop \
     && rm -f /var/cache/apk/*
 
