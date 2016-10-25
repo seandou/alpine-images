@@ -13,6 +13,7 @@ ADD repositories /etc/apk/repositories
 RUN apk update \
     && apk add bash bash-completion \
     && apk add tzdata \
+    && apk add openssl \
     && apk add tree vim git \
     && apk add htop \
     && rm -f /var/cache/apk/*
