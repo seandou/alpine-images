@@ -10,7 +10,7 @@ TMP_DIR="/tmp/node-$NODE_VERSION"
 apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg
 
 # Download and unpack node package
-wget -c https://npm.taobao.org/mirrors/node/$NODE_VERSION/$NODE_PACKAGE -O $TMP_FILE
+wget -cq https://npm.taobao.org/mirrors/node/$NODE_VERSION/$NODE_PACKAGE -O $TMP_FILE
 cd /tmp/ && tar xzf $NODE_PACKAGE
 
 # Building
