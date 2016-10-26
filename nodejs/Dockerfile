@@ -1,4 +1,4 @@
-# docker build -t alpine-nodejs:v4.6.1 .
+# docker build -t alpine-nodejs:<version> .
 
 FROM alpine-base:latest
 

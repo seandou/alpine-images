@@ -19,5 +19,7 @@ cd $TMP_DIR && ./configure && make && make install
 # Clean up temp files
 rm -rf $TMP_FILE $TMP_DIR
 
-# Update npm and install cnpm
-npm install -g npm cnpm
+# Install cnpm、yarn and update npm
+npm install -g cnpm
+npm install -g yarn
+cnpm install -g npm
