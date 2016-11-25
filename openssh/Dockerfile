@@ -1,6 +1,6 @@
 # docker build -t alpine-openssh .
 
-FROM alpine-base
+FROM seandou/alpine-base:latest
 
 # Update repository and install ssh-server
 RUN apk add --no-cache openssh \
