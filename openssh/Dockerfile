@@ -1,4 +1,4 @@
-# docker build -t alpine-openssh .
+# docker build --no-cache -t seandou/alpine-openssh:latest .
 
 FROM seandou/alpine-base:latest
 

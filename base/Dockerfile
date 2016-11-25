@@ -2,7 +2,7 @@
 # https://github.com/CentOS/sig-cloud-instance-images
 # https://github.com/CentOS/CentOS-Dockerfiles
 # 
-# docker build -t alpine-base:3.4 . && docker tag alpine-base:3.4 alpine-base:latest
+# docker build --no-cache -t seandou/alpine-base:3.4 . && docker tag seandou/alpine-base:3.4 seandou/alpine-base:latest
 #
 
 FROM alpine:3.4
