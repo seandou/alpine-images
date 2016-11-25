@@ -3,6 +3,7 @@
 # https://github.com/CentOS/CentOS-Dockerfiles
 # 
 # docker build -t alpine-base:3.4 . && docker tag alpine-base:3.4 alpine-base:latest
+#
 
 FROM alpine:3.4
 

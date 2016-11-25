@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NODE_VERSION="v4.6.1"
+NODE_VERSION=$1
 
 NODE_PACKAGE="node-$NODE_VERSION.tar.gz"
 TMP_FILE="/tmp/$NODE_PACKAGE"
